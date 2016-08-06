@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
-class FamilyMembersViewController: UIViewController, AddFamilyMemberDelegate {
+class FamilyMembersViewController: UIViewController, AddFamilyMemberDelegate, MOCViewControllerType {
     
     @IBOutlet var tableView: UITableView!
     
+    var managedObjectContext: NSManagedObjectContext?
+    
     func saveFamilyMember(withName name: String) {
-        print("should save family member with name: \(name)")
+        
+        
     }
 
     // MARK: - Navigation

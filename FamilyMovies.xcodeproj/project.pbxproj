@@ -17,6 +17,9 @@
 		9795F4561D4CB2C5005AF8AF /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9795F4551D4CB2C5005AF8AF /* AddMovieViewController.swift */; };
 		9795F4591D4CB45F005AF8AF /* AddMovieDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9795F4581D4CB45F005AF8AF /* AddMovieDelegate.swift */; };
 		9795F45B1D4CB468005AF8AF /* AddFamilyMemberDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9795F45A1D4CB468005AF8AF /* AddFamilyMemberDelegate.swift */; };
+		9795F4821D4E0BDC005AF8AF /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9795F4811D4E0BDC005AF8AF /* NSPersistentContainer.swift */; };
+		9795F4841D4E103F005AF8AF /* MOCViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9795F4831D4E103F005AF8AF /* MOCViewControllerType.swift */; };
+		9795F4871D4E138C005AF8AF /* FamilyMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9795F4851D4E138C005AF8AF /* FamilyMovies.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		9795F4551D4CB2C5005AF8AF /* AddMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
 		9795F4581D4CB45F005AF8AF /* AddMovieDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieDelegate.swift; sourceTree = "<group>"; };
 		9795F45A1D4CB468005AF8AF /* AddFamilyMemberDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyMemberDelegate.swift; sourceTree = "<group>"; };
+		9795F4811D4E0BDC005AF8AF /* NSPersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPersistentContainer.swift; sourceTree = "<group>"; };
+		9795F4831D4E103F005AF8AF /* MOCViewControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOCViewControllerType.swift; sourceTree = "<group>"; };
+		9795F4861D4E138C005AF8AF /* FamilyMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FamilyMovies.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +70,11 @@
 		9795F43B1D4CAFEC005AF8AF /* FamilyMovies */ = {
 			isa = PBXGroup;
 			children = (
+				9795F4801D4E0BD0005AF8AF /* Extensions */,
 				9795F4571D4CB450005AF8AF /* Protocols */,
 				9795F44E1D4CB292005AF8AF /* ViewControllers */,
 				9795F43C1D4CAFEC005AF8AF /* AppDelegate.swift */,
+				9795F4851D4E138C005AF8AF /* FamilyMovies.xcdatamodeld */,
 				9795F4401D4CAFEC005AF8AF /* Main.storyboard */,
 				9795F4431D4CAFEC005AF8AF /* Assets.xcassets */,
 				9795F4451D4CAFEC005AF8AF /* LaunchScreen.storyboard */,
@@ -91,8 +99,17 @@
 			children = (
 				9795F4581D4CB45F005AF8AF /* AddMovieDelegate.swift */,
 				9795F45A1D4CB468005AF8AF /* AddFamilyMemberDelegate.swift */,
+				9795F4831D4E103F005AF8AF /* MOCViewControllerType.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		9795F4801D4E0BD0005AF8AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9795F4811D4E0BDC005AF8AF /* NSPersistentContainer.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9795F4871D4E138C005AF8AF /* FamilyMovies.xcdatamodeld in Sources */,
 				9795F43D1D4CAFEC005AF8AF /* AppDelegate.swift in Sources */,
 				9795F4591D4CB45F005AF8AF /* AddMovieDelegate.swift in Sources */,
 				9795F4501D4CB2AA005AF8AF /* FamilyMembersViewController.swift in Sources */,
+				9795F4821D4E0BDC005AF8AF /* NSPersistentContainer.swift in Sources */,
 				9795F4521D4CB2B6005AF8AF /* MoviesViewController.swift in Sources */,
+				9795F4841D4E103F005AF8AF /* MOCViewControllerType.swift in Sources */,
 				9795F4541D4CB2BF005AF8AF /* AddFamilyMemberViewController.swift in Sources */,
 				9795F4561D4CB2C5005AF8AF /* AddMovieViewController.swift in Sources */,
 				9795F45B1D4CB468005AF8AF /* AddFamilyMemberDelegate.swift in Sources */,
@@ -333,6 +353,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9795F4851D4E138C005AF8AF /* FamilyMovies.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9795F4861D4E138C005AF8AF /* FamilyMovies.xcdatamodel */,
+			);
+			currentVersion = 9795F4861D4E138C005AF8AF /* FamilyMovies.xcdatamodel */;
+			path = FamilyMovies.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9795F4311D4CAFEC005AF8AF /* Project object */;
 }
