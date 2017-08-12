@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96BEB2031F3E73F400BE285A /* NSManagedObjectContext+Persist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BEB2021F3E73F400BE285A /* NSManagedObjectContext+Persist.swift */; };
+		96C394C91F3F94A100FD5099 /* MovieDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C394C81F3F94A100FD5099 /* MovieDBHelper.swift */; };
 		9795F43D1D4CAFEC005AF8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9795F43C1D4CAFEC005AF8AF /* AppDelegate.swift */; };
 		9795F4421D4CAFEC005AF8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9795F4401D4CAFEC005AF8AF /* Main.storyboard */; };
 		9795F4441D4CAFEC005AF8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9795F4431D4CAFEC005AF8AF /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96BEB2021F3E73F400BE285A /* NSManagedObjectContext+Persist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Persist.swift"; sourceTree = "<group>"; };
+		96C394C81F3F94A100FD5099 /* MovieDBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDBHelper.swift; sourceTree = "<group>"; };
 		9795F4391D4CAFEC005AF8AF /* FamilyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9795F43C1D4CAFEC005AF8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9795F4411D4CAFEC005AF8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				9795F4431D4CAFEC005AF8AF /* Assets.xcassets */,
 				9795F4451D4CAFEC005AF8AF /* LaunchScreen.storyboard */,
 				9795F4481D4CAFEC005AF8AF /* Info.plist */,
+				96C394C81F3F94A100FD5099 /* MovieDBHelper.swift */,
 			);
 			path = FamilyMovies;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9795F4811D4E0BDC005AF8AF /* NSPersistentContainer.swift */,
+				96BEB2021F3E73F400BE285A /* NSManagedObjectContext+Persist.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -188,11 +194,13 @@
 			files = (
 				9795F4871D4E138C005AF8AF /* FamilyMovies.xcdatamodeld in Sources */,
 				9795F43D1D4CAFEC005AF8AF /* AppDelegate.swift in Sources */,
+				96BEB2031F3E73F400BE285A /* NSManagedObjectContext+Persist.swift in Sources */,
 				9795F4591D4CB45F005AF8AF /* AddMovieDelegate.swift in Sources */,
 				9795F4501D4CB2AA005AF8AF /* FamilyMembersViewController.swift in Sources */,
 				9795F4821D4E0BDC005AF8AF /* NSPersistentContainer.swift in Sources */,
 				9795F4521D4CB2B6005AF8AF /* MoviesViewController.swift in Sources */,
 				9795F4841D4E103F005AF8AF /* MOCViewControllerType.swift in Sources */,
+				96C394C91F3F94A100FD5099 /* MovieDBHelper.swift in Sources */,
 				9795F4541D4CB2BF005AF8AF /* AddFamilyMemberViewController.swift in Sources */,
 				9795F4561D4CB2C5005AF8AF /* AddMovieViewController.swift in Sources */,
 				9795F45B1D4CB468005AF8AF /* AddFamilyMemberDelegate.swift in Sources */,
@@ -351,6 +359,7 @@
 				9795F44D1D4CAFEC005AF8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

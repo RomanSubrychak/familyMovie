@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let container = NSPersistentContainer(name: "FamilyMovies")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                fatalError("Unresolved error \(error), \(String(describing: error._userInfo))")
             }
         })
         return container
     }()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         if let navVC = window?.rootViewController as? UINavigationController,
             var initialVC = navVC.viewControllers[0] as? MOCViewControllerType {
